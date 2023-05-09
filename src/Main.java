@@ -8,7 +8,7 @@ public class Main {
         int TotalSum; //сумма счета вместе с бонусами
         System.out.println("Сумма пополнения: " + deposit);
 
-        if (deposit < 1100) {
+        if (deposit < 1001) {
             TotalSum = amount + deposit; //Сохранение в переменную TotalSum итоговой суммы счета вместе с бонусами
             Bonus = 0; //Сохранение в переменную Bonus кол-ва бонусов
             System.out.println("Начислено " + Bonus + " бонусов.");
