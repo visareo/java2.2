@@ -1,19 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        int amount = 100;
-        System.out.println("На счету 100 рублей");
+        int amount = 999;
+        System.out.println("На счету " + amount + " рублей");
 
-        int x = 2000;
-        System.out.println("Сумма пополнения:" + x);
+        int deposit = 1001;
+        int Bonus;
+        int TotalSum;
+        System.out.println("Сумма пополнения: " + deposit);
 
-        if (x < 1000) {
-            System.out.println("Бонусов 0");
-
-            System.out.println("Итоговая сумма:");
-            System.out.println(amount + x);
+        if (deposit < 1001) {
+            TotalSum = amount + deposit;
+            Bonus = 0;
+            System.out.println("Начислено " + Bonus + " бонусов.");
+            System.out.println("Итоговая сумма: " + TotalSum);
         } else {
-            System.out.println("Количество бонусов:" + (x / 100));
-            System.out.println("Итоговая сумма:" + (x + (x / 100 + amount)));
+            Bonus = (deposit / 100);
+            TotalSum = deposit + (deposit / 100 + amount);
+            System.out.println("Количество бонусов: " + Bonus);
+            System.out.println("Итоговая сумма: " + TotalSum);
 
     }
 
